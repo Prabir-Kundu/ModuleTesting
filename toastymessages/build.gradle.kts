@@ -64,6 +64,7 @@ afterEvaluate {
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
                 version = "1.0.6"
+
             }
         }
         repositories {
