@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.prabirkundu.toastymessages"
-version = "1.0.1"
+version = "1.0.2"
 
 android {
     namespace = "com.prabirkundu.toastymessages"
@@ -42,8 +42,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 
@@ -63,7 +63,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
-                version = "1.0.1"
+                version = "1.0.2"
             }
         }
     }
