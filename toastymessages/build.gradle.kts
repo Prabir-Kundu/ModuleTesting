@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.prabirkundu.toastymessages"
-version = "1.0.6"
+version = "1.0.8"
 
 android {
     namespace = "com.prabirkundu.toastymessages"
@@ -63,12 +63,8 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
-                version = "1.0.6"
-
+                version = "1.0.8"
             }
-        }
-        repositories {
-            mavenLocal()
         }
     }
 }
