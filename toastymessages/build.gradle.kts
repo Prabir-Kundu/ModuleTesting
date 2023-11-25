@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.prabirkundu.toastymessages"
-version = "1.0"
+version = "1.0.1"
 
 android {
     namespace = "com.prabirkundu.toastymessages"
@@ -21,7 +21,9 @@ android {
         aarMetadata {
             minCompileSdk = 29
         }
-
+        testFixtures {
+            enable = true
+        }
         //TODO STEP 03
         publishing {
             singleVariant("release") {
@@ -61,7 +63,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
-                version = "1.0.0"
+                version = "1.0.1"
             }
         }
     }
