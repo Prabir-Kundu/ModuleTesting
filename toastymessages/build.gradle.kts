@@ -4,8 +4,8 @@ plugins {
     id ("maven-publish")
 }
 
-group = "com.prabirkundu.toastymessages"
-version = "1.0.9"
+//group = "com.prabirkundu.toastymessages"
+//version = "1.0.9"
 
 android {
     namespace = "com.prabirkundu.toastymessages"
@@ -21,6 +21,7 @@ android {
         aarMetadata {
             minCompileSdk = 29
         }
+
         testFixtures {
             enable = true
         }
@@ -63,7 +64,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
-                version = "1.0.9"
+                version = "1.1.0"
             }
         }
     }
