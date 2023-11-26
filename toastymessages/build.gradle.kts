@@ -22,9 +22,9 @@ android {
             minCompileSdk = 29
         }
 
-        testFixtures {
+        /*testFixtures {
             enable = true
-        }
+        }*/
         //TODO STEP 03
         publishing {
             singleVariant("release") {
@@ -64,7 +64,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.prabirkundu.toastymessages"
                 artifactId = "ToastyMassages"
-                version = "1.1.0"
+                version = "1.1.1"
             }
         }
     }
